@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cut Short your URLs</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+	  <h1>Cut Short your URLs</h1>
+
+	  <div id="form-messages"></div>
+		
+		<form id="ajax-contact" method="post" action="#">
+			<div class="field">
+				<label for="url">Enter your long URL:</label>
+				<input type="text" id="url" name="url" required>
+			</div>	
+
+			<div class="field">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+	
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
