@@ -45,8 +45,8 @@ var posturl = "https://mir1ws0chd.execute-api.ap-southeast-1.amazonaws.com/prod/
 			var res = JSON.stringify(response);
 			res = JSON.parse(res);
 			// Set the message text.
-			var redirURL = res.ShortURL
-			$(formMessages).append ("The short url is here, Click the link to test :<a href='" + posturl + redirURL + "'>" + redirURL + "</a>" );
+			var redirURL = res.ShortURL			
+			$(formMessages).append ("The short url is here, Click the link to test :<a href='" + posturl + redirURL + "'>" + redirURL + "</a> </br> Copy Link: <p color='red'>" + posturl + redirURL + "</p>" );
 			}
 			// Clear the form.
 			$('#url').val('');			
